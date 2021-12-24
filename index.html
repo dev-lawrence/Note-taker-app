@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Note taker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1>note taker</h1>
+        <h2>add a new note:</h2>
+
+        <form id="form">
+          <div class="d-flex">
+            <label for="text">Note:</label><br />
+            <textarea
+              id="text"
+              cols="50"
+              rows="3"
+              placeholder="Write your note here"
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit">Add Note</button>
+        </form>
+
+        <p class="placeholder">No notes added yet!</p>
+
+        <div class="notes-container"></div>
+
+        <div class="modal-container">
+          <div class="modal">
+            <button class="modal-btn">&times;</button>
+            <p class="modal-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body,
+.btn,
+:placeholder-shown {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: green;
+  margin-top: 0.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-right: 0.3rem;
+}
+
+textarea {
+  max-width: 300px;
+  border: 1px solid #ddd;
+  outline-color: blue;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  border-radius: 0.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: green;
+  border: none;
+  color: #fff;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.notes-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.notes {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin: 0 2rem;
+}
+
+.note-text {
+  height: 90px;
+  overflow: hidden;
+}
+
+.note-title {
+  margin-bottom: 0.5rem;
+}
+
+.d-button {
+  padding: 0.5rem;
+  background-color: blue;
+  border: none;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.modal-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
